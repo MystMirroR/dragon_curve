@@ -1,14 +1,9 @@
-import java.awt.geom.AffineTransform
-import java.awt.geom.Area
-import java.awt.geom.Rectangle2D
-import kotlin.math.PI
-
 fun main(args: Array<String>) {
 
-    var calcR2 = Rectangle(Pair(0,0), Pair(0,1), Pair(1,1), Pair(1,0))
-    var pivot = Pair(1L,1L)
-    val startVector = Pair(1L,1L)
-    var endVector  : Pair<Long, Long> = startVector
+    var calcR2 = Rectangle(Pair(0, 0), Pair(0, 1), Pair(1, 1), Pair(1, 0))
+    var pivot = Pair(1L, 1L)
+    val startVector = Pair(1L, 1L)
+    var endVector: Pair<Long, Long> = startVector
     println("WIDTH :  1   HEIGHT: 1")
     for (i in 1..100) {
         val shape = calcR2.rotate90degress(pivot)
